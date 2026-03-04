@@ -472,7 +472,7 @@ def generate_html(llm_results, stock_data, all_trading_days):
 
     html += '''
   <div class="price-section">
-    <div class="section-title">📋 Yahoo Finance US Stock Close Prices (latest date first)</div>
+    <div class="section-title">📋 Yahoo Finance US Stock Close Prices </div>
     <div class="price-table-wrap"><table>
       <thead><tr><th style="text-align:left;padding-left:8px;">Stock</th>
 '''
@@ -493,7 +493,7 @@ def generate_html(llm_results, stock_data, all_trading_days):
 
     # ── S&P 500 table — latest date first ─────────────────────────────
     html += f'''
-    <div class="section-title" style="margin-top:36px;">📊 Normalized S&amp;P 500 Points (latest date first)</div>
+    <div class="section-title" style="margin-top:36px;">📊 Normalized S&amp;P 500 Points </div>
     <div class="price-table-wrap"><table>
       <thead><tr><th style="text-align:left;padding-left:8px;">Metric</th>
 '''
