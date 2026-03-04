@@ -368,9 +368,9 @@ def generate_html(llm_results, stock_data, all_trading_days):
 
     html = html_open
     html += f'''  <div class="header">
-    <h1>🤖 LLM Portfolio Battle</h1>
+    <h1> LLM Portfolio Battle</h1>
     <p class="subtitle">{range_label} | $1,000 Initial Investment | Rolling Weekly Strategy</p>
-    <p class="authors" style="font-size:clamp(.8em,2vw,.95em);color:rgba(255,255,255,0.85);margin-top:10px;font-weight:500;letter-spacing:0.3px;">✍️ Manasa Dontireddy ,&nbsp;&nbsp;Dr. Orhan Erdem</p>
+    <p class="authors" style="font-size:clamp(.8em,2vw,.95em);color:rgba(255,255,255,0.85);margin-top:10px;font-weight:500;letter-spacing:0.3px;">✍️  Manasa Dontireddy ,&nbsp;&nbsp; Orhan Erdem</p>
     <p class="meta">🕐 Last Updated: {fetch_time}</p>
   </div>
   <div class="section">
@@ -462,14 +462,14 @@ def generate_html(llm_results, stock_data, all_trading_days):
         html += '          </tbody></table></div>\n    </div>\n'
     html += '  </div>\n'
 
-    # ── Yahoo Finance price table — latest date first (reversed) ──────
+    # ── Yahoo Finance price table  ──────
     # Reverse dates so latest day is first (left)
     date_labels_rev = list(reversed(date_labels))
     prices_rev_idx  = list(reversed(range(len(all_trading_days))))
 
     html += '''
   <div class="price-section">
-    <div class="section-title">📋 Yahoo Finance US Stock Close Prices (latest date first)</div>
+    <div class="section-title">📋 Yahoo Finance US Stock Close Prices </div>
     <div class="price-table-wrap"><table>
       <thead><tr><th style="text-align:left;padding-left:8px;">Stock</th>
 '''
@@ -490,7 +490,7 @@ def generate_html(llm_results, stock_data, all_trading_days):
 
     # ── S&P 500 table — latest date first ─────────────────────────────
     html += f'''
-    <div class="section-title" style="margin-top:36px;">📊 Normalized S&amp;P 500 Points (latest date first)</div>
+    <div class="section-title" style="margin-top:36px;">📊 Normalized S&amp;P 500 Points </div>
     <div class="price-table-wrap"><table>
       <thead><tr><th style="text-align:left;padding-left:8px;">Metric</th>
 '''
