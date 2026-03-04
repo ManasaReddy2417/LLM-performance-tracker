@@ -375,9 +375,9 @@ def generate_html(llm_results, stock_data, all_trading_days):
 
     html = html_open
     html += f'''  <div class="header">
-    <h1>🤖 LLM Portfolio Battle</h1>
+    <h1> LLM Portfolio Battle</h1>
     <p class="subtitle">{range_label} | $1,000 Initial Investment | Rolling Weekly Strategy</p>
-    <p class="authors" style="font-size:clamp(.8em,2vw,.95em);color:rgba(255,255,255,0.85);margin-top:10px;font-weight:500;letter-spacing:0.3px;">✍️ Manasa Dontireddy ,&nbsp;&nbsp;Dr. Orhan Erdem</p>
+    <p class="authors" style="font-size:clamp(.8em,2vw,.95em);color:rgba(255,255,255,0.85);margin-top:10px;font-weight:500;letter-spacing:0.3px;">✍️&nbsp Manasa Dontireddy ,&nbsp;&nbsp; Orhan Erdem</p>
     <p class="meta">🕐 Last Updated: {fetch_time}</p>
   </div>
   <div class="section">
