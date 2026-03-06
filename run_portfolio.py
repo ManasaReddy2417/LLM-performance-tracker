@@ -579,7 +579,6 @@ for (var li=0; li<labelArr.length; li++) {{
 Plotly.newPlot('line-chart', lineTraces, {{
   paper_bgcolor: '#ffffff', plot_bgcolor: '#fafbff',
   xaxis: {{
-    title: {{ text: 'Date', font: {{ size: 14, color: '#374151', family: 'Inter,sans-serif' }} }},
     showgrid: true, gridcolor: '#e8ecf4', gridwidth: 1,
     color: '#374151',
     tickfont: {{ size: 13, color: '#374151', family: 'Inter,sans-serif' }},
