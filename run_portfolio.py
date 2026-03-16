@@ -233,12 +233,12 @@ def calculate_performance():
             wfd = next((w for w in llm_results[llm_name]['weeks']
                         if w['start_date'] <= day <= w['end_date']), None)
             if wfd:
-                is_week_start = (day == wfd['start_date'])
-                if is_week_start and cum:
+                #is_week_start = (day == wfd['start_date'])
+                #if is_week_start and cum:
                     # On Monday (week start), carry forward Friday's closing value
                     # so the chart doesn't show a flat Mon==Fri line
-                    cum.append(cum[-1])
-                else:
+                    #cum.append(cum[-1])
+                #else:
                     val = sum(
                         s['shares'] * stock_data.get(s['stock'], {}).get('prices', [100.0]*len(all_trading_days))[day_idx]
                         for s in wfd['stocks']
