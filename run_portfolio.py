@@ -94,7 +94,7 @@ WEEKS_DATA = [
             'DeepSeek': [{"stock": "EQNR", "weight": 25},{"stock": "PBR",  "weight": 15},{"stock": "XOM",  "weight": 10},{"stock": "RHM",  "weight": 15},{"stock": "CAT",  "weight": 10},{"stock": "CMA",  "weight": 10},{"stock": "CMSC", "weight": 10},{"stock": "MU",   "weight": 5}],
             'Grok':     [{"stock": "ORCL", "weight": 30},{"stock": "NIO",  "weight": 25},{"stock": "AVAV", "weight": 20},{"stock": "PATH", "weight": 15},{"stock": "HPE",  "weight": 10}]
         }
-    }
+    },
   # Week 7: Mar 16-20, 2026 -----------------------------------------------
   {
     'week_num': 7,
