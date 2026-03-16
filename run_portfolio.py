@@ -95,6 +95,18 @@ WEEKS_DATA = [
             'Grok':     [{"stock": "ORCL", "weight": 30},{"stock": "NIO",  "weight": 25},{"stock": "AVAV", "weight": 20},{"stock": "PATH", "weight": 15},{"stock": "HPE",  "weight": 10}]
         }
     }
+  # Week 7: Mar 16-20, 2026 -----------------------------------------------
+  {
+    'week_num': 7,
+    'start_date': datetime(2026, 3, 16),
+    'end_date': datetime(2026, 3, 20),
+    'portfolios': {
+        'ChatGPT':  [{"stock": "NVDA", "weight": 22},{"stock": "TSLA", "weight": 18},{"stock": "AMD", "weight": 16},{"stock": "META", "weight": 15},{"stock": "SMCI", "weight": 15},{"stock": "COIN", "weight": 14}],
+        'Claude AI':[{"stock": "NVDA", "weight": 25},{"stock": "MU", "weight": 15},{"stock": "META", "weight": 15},{"stock": "LMT", "weight": 10},{"stock": "RTX", "weight": 10},{"stock": "XOM", "weight": 10},{"stock": "MSFT", "weight": 10},{"stock": "GS", "weight": 5}],
+        'DeepSeek': [{"stock": "XOM", "weight": 25},{"stock": "OKE", "weight": 20},{"stock": "MPC", "weight": 15},{"stock": "NUE", "weight": 15},{"stock": "LMT", "weight": 15},{"stock": "VIXM", "weight": 10}],
+        'Grok':     [{"stock": "NVDA", "weight": 35},{"stock": "MU", "weight": 30},{"stock": "BABA", "weight": 15},{"stock": "LULU", "weight": 10},{"stock": "ACN", "weight": 10}]
+      }
+  }
 ]
 print(f' {len(WEEKS_DATA)} weeks defined')
 
