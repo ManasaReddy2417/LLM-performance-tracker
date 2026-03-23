@@ -106,7 +106,20 @@ WEEKS_DATA = [
         'DeepSeek': [{"stock": "XOM", "weight": 25},{"stock": "OKE", "weight": 20},{"stock": "MPC", "weight": 15},{"stock": "NUE", "weight": 15},{"stock": "LMT", "weight": 15},{"stock": "VIXM", "weight": 10}],
         'Grok':     [{"stock": "NVDA", "weight": 35},{"stock": "MU", "weight": 30},{"stock": "BABA", "weight": 15},{"stock": "LULU", "weight": 10},{"stock": "ACN", "weight": 10}]
       }
-  }
+  },
+
+   # Week 8: Mar 23-27, 2026 -----------------------------------------------
+  {
+    'week_num': 8,
+    'start_date': datetime(2026, 3, 23),
+    'end_date': datetime(2026, 3, 27),
+    'portfolios': {
+        'ChatGPT':  [{"stock": "NVDA", "weight": 25},{"stock": "TSLA", "weight": 20},{"stock": "AMD", "weight": 15},{"stock": "META", "weight": 15},{"stock": "AMZN", "weight": 10},{"stock": "COIN", "weight": 10},{"stock": "SPY", "weight": 5}],
+        'Grok':     [{"stock": "GME", "weight": 30},{"stock": "PDD", "weight": 25},{"stock": "CHWY", "weight": 20},{"stock": "BLNK", "weight": 15},{"stock": "CCL", "weight": 10}],
+        'DeepSeek': [{"stock": "SLB", "weight": 20},{"stock": "CNQ", "weight": 12},{"stock": "MUR", "weight": 8},{"stock": "GME", "weight": 10},{"stock": "PDD", "weight": 10},{"stock": "NVDA", "weight": 10},{"stock": "FIX", "weight": 8},{"stock": "ONTO", "weight": 7},{"stock": "DTE", "weight": 5},{"stock": "CCL", "weight": 10}],
+        'Claude AI':[{"stock": "UAL", "weight": 15},{"stock": "CAT", "weight": 12},{"stock": "NVDA", "weight": 12},{"stock": "GLW", "weight": 10},{"stock": "AAPL", "weight": 10},{"stock": "AMZN", "weight": 10},{"stock": "PH", "weight": 8},{"stock": "MS", "weight": 8},{"stock": "XOM", "weight": 8},{"stock": "IWM", "weight": 7}]
+       }
+   }
 ]
 print(f' {len(WEEKS_DATA)} weeks defined')
 
