@@ -169,7 +169,19 @@ WEEKS_DATA = [
         'DeepSeek': [{"stock": "TSLA", "weight": 20},{"stock": "INTC", "weight": 15},{"stock": "BA", "weight": 10},{"stock": "IBM", "weight": 10},{"stock": "NVDA", "weight": 10},{"stock": "AMD", "weight": 10},{"stock": "PLTR", "weight": 10},{"stock": "ATAI", "weight": 5},{"stock": "CMPS", "weight": 5},{"stock": "GHRS", "weight": 5}],
         'Claude AI':[{"stock": "AMZN", "weight": 20},{"stock": "TSLA", "weight": 15},{"stock": "NBIS", "weight": 12},{"stock": "LRCX", "weight": 10},{"stock": "INTC", "weight": 10},{"stock": "PAHC", "weight": 8},{"stock": "MRVL", "weight": 8},{"stock": "ROAD", "weight": 7},{"stock": "MXL", "weight": 5},{"stock": "GOLD", "weight": 5}]
        }
-   }
+   },
+      # Week 13: Apr 27 - May 1, 2026 -----------------------------------------------
+    {
+        'week_num': 13,
+        'start_date': datetime(2026, 4, 27),
+        'end_date': datetime(2026, 5, 1),
+        'portfolios': {
+            'ChatGPT':  [{"stock": "NVDA", "weight": 20},{"stock": "TSLA", "weight": 15},{"stock": "AMD", "weight": 15},{"stock": "META", "weight": 10},{"stock": "AAPL", "weight": 10},{"stock": "MSFT", "weight": 10},{"stock": "AMZN", "weight": 10},{"stock": "COIN", "weight": 5},{"stock": "PLTR", "weight": 5}],
+            'Grok':     [{"stock": "NVDA", "weight": 30},{"stock": "META", "weight": 20},{"stock": "MSFT", "weight": 15},{"stock": "AMZN", "weight": 15},{"stock": "GOOGL", "weight": 10},{"stock": "HOOD", "weight": 10}],
+            'DeepSeek': [{"stock": "MU", "weight": 40},{"stock": "CDNA", "weight": 25},{"stock": "FIVE", "weight": 20},{"stock": "ROAD", "weight": 15}],
+            'Claude AI':[{"stock": "META", "weight": 14},{"stock": "GOOGL", "weight": 13},{"stock": "MSFT", "weight": 12},{"stock": "GM", "weight": 12},{"stock": "AMZN", "weight": 11},{"stock": "KO", "weight": 10},{"stock": "TXN", "weight": 9},{"stock": "INTC", "weight": 7},{"stock": "AXP", "weight": 7},{"stock": "BE", "weight": 5}]
+           }
+       }
 ]
 print(f' {len(WEEKS_DATA)} weeks defined')
 
