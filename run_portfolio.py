@@ -222,7 +222,7 @@ WEEKS_DATA = [
 {
     'week_num': 17,
     'start_date': datetime(2026, 5, 25),
-    'end_date': datetime(2026, 5, 30),
+    'end_date': datetime(2026, 5, 29),
     'portfolios': {
         'ChatGPT':  [{"stock": "NVDA", "weight": 28},{"stock": "PLTR", "weight": 18},{"stock": "AMD", "weight": 16},{"stock": "HOOD", "weight": 14},{"stock": "MSTR", "weight": 12},{"stock": "TSLA", "weight": 12}],
         'Grok':     [{"stock": "NVDA", "weight": 35},{"stock": "AMD", "weight": 25},{"stock": "MU", "weight": 20},{"stock": "MRVL", "weight": 10},{"stock": "SMCI", "weight": 10}],
