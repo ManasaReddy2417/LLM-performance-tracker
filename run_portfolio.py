@@ -20,10 +20,13 @@ _is_cdt     = (_utc_now.month > 3 or (_utc_now.month == 3 and _utc_now.day >= 8)
               (_utc_now.month < 11 or (_utc_now.month == 11 and _utc_now.day < 1))
 _ct_offset  = timedelta(hours=-5) if _is_cdt else timedelta(hours=-6)
 _ct_now     = _utc_now + _ct_offset
-MONTH_END   = _ct_now.replace(hour=0, minute=0, second=0, microsecond=0)
+_ct_today   = _ct_now.replace(hour=0, minute=0, second=0, microsecond=0)
+# Use yesterday if market hasn't closed yet (before 4:30 PM CT)
+_market_closed = (_ct_now.hour > 16) or (_ct_now.hour == 16 and _ct_now.minute >= 30)
+MONTH_END   = _ct_today if _market_closed else _ct_today - timedelta(days=1)
 
-print(f'💰 Initial Investment: ${INITIAL_INVESTMENT}')
-print(f'📅 Tracking: {MONTH_START.strftime("%b %d, %Y")} → {MONTH_END.strftime("%b %d, %Y")}')
+print(f' Initial Investment: ${INITIAL_INVESTMENT}')
+print(f' Tracking: {MONTH_START.strftime("%b %d, %Y")} → {MONTH_END.strftime("%b %d, %Y")}')
 
 # ── All weekly portfolio data ──────────────────────────────────────────
 WEEKS_DATA = [
@@ -278,6 +281,9 @@ def fetch_stock_data():
                 start=MONTH_START.strftime('%Y-%m-%d'),
                 end=(MONTH_END + timedelta(days=1)).strftime('%Y-%m-%d')
             )
+            # Normalize index: strip timezone so strftime works reliably
+            if not hist.empty and hasattr(hist.index, 'tz') and hist.index.tz is not None:
+                hist.index = hist.index.tz_localize(None)
             prices, last_known = [], None
             for td in all_trading_days:
                 ds = td.strftime('%Y-%m-%d')
