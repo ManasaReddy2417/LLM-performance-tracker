@@ -579,14 +579,14 @@ def generate_html(llm_results, stock_data, all_trading_days):
     html += f'''  <div class="header">
     <h1> LLM Portfolio Battle</h1>
     <p class="subtitle">{range_label} | $1,000 Initial Investment | Rolling Weekly Strategy</p>
-    <p class="authors" style="font-size:clamp(.8em,2vw,.95em);color:rgba(255,255,255,0.85);margin-top:10px;font-weight:500;letter-spacing:0.3px;">✍️&nbsp Manasa Dontireddy ,&nbsp;&nbsp; Orhan Erdem</p>
+    <p class="authors" style="font-size:clamp(.8em,2vw,.95em);color:rgba(255,255,255,0.85);margin-top:10px;font-weight:500;letter-spacing:0.3px;"> &nbsp Manasa Dontireddy ,&nbsp;&nbsp; Orhan Erdem</p>
     <p class="meta">🕐 Last Updated: {fetch_time}</p>
   </div>
   <div class="section">
     <div class="section-title" style="justify-content:space-between;flex-wrap:wrap;gap:10px;">
       <span id="chart-title">📈 Cumulative Portfolio Value vs S&amp;P 500 ({range_label})</span>
       <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <label for="baseline-select" style="font-size:.85em;font-weight:700;color:#1e3a8a;white-space:nowrap;">📅 Reference:</label>
+        <label for="baseline-select" style="font-size:.85em;font-weight:700;color:#1e3a8a;white-space:nowrap;">📅 Reference Date :</label>
         <select id="baseline-select" onchange="switchBaseline(this.value)" style="font-family:Inter,sans-serif;font-size:.88em;font-weight:600;color:#1e3a8a;background:#fff;border:2px solid #6366f1;border-radius:8px;padding:6px 12px;cursor:pointer;outline:none;box-shadow:0 1px 4px rgba(99,102,241,.15);">
           <option value="feb" selected>Feb 1 — Start of competition</option>
           <option value="may">May 1 — Recent performance</option>
