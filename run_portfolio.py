@@ -265,6 +265,18 @@ WEEKS_DATA = [
         'DeepSeek': [{"stock": "NVDA", "weight": 20},{"stock": "NBIS", "weight": 15},{"stock": "MU", "weight": 15},{"stock": "SNDK", "weight": 10},{"stock": "VSAT", "weight": 10},{"stock": "UAL", "weight": 10},{"stock": "CCL", "weight": 10},{"stock": "SPCX", "weight": 10}],
         'Claude AI':[{"stock": "NVDA", "weight": 20},{"stock": "MSFT", "weight": 15},{"stock": "ISRG", "weight": 15},{"stock": "CRWD", "weight": 12},{"stock": "EZPW", "weight": 10},{"stock": "NVT", "weight": 10},{"stock": "ARKO", "weight": 8},{"stock": "LXFR", "weight": 5},{"stock": "MTLS", "weight": 5}]
         }
+    },
+  # Week 21: Jun 22-26, 2026 -----------------------------------------------
+{
+    'week_num': 21,
+    'start_date': datetime(2026, 6, 22),
+    'end_date': datetime(2026, 6, 26),
+    'portfolios': {
+        'ChatGPT':  [{"stock": "NVDA", "weight": 20}, {"stock": "TSLA", "weight": 15}, {"stock": "AMD", "weight": 15}, {"stock": "META", "weight": 15}, {"stock": "AAPL", "weight": 10}, {"stock": "MSFT", "weight": 10}, {"stock": "AMZN", "weight": 10}, {"stock": "NFLX", "weight": 5}],
+        'Grok':     [{"stock": "NVDA", "weight": 35}, {"stock": "AMD", "weight": 25}, {"stock": "MU", "weight": 20}, {"stock": "SMCI", "weight": 10}, {"stock": "MRVL", "weight": 10}],
+        'DeepSeek': [{"stock": "MU", "weight": 20}, {"stock": "SNDK", "weight": 18}, {"stock": "STX", "weight": 15}, {"stock": "AMZN", "weight": 12}, {"stock": "NVDA", "weight": 10}, {"stock": "STRL", "weight": 8}, {"stock": "DELL", "weight": 7}, {"stock": "FDX", "weight": 5}, {"stock": "AAPL", "weight": 3}, {"stock": "VIAV", "weight": 2}],
+        'Claude AI':[{"stock": "NVDA", "weight": 25}, {"stock": "MSFT", "weight": 20}, {"stock": "AVGO", "weight": 15}, {"stock": "FDX", "weight": 15}, {"stock": "SPY", "weight": 25}]
+        }
     }
 ]
 print(f' {len(WEEKS_DATA)} weeks defined')
