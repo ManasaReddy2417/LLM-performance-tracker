@@ -277,6 +277,18 @@ WEEKS_DATA = [
         'DeepSeek': [{"stock": "MU", "weight": 20}, {"stock": "SNDK", "weight": 18}, {"stock": "STX", "weight": 15}, {"stock": "AMZN", "weight": 12}, {"stock": "NVDA", "weight": 10}, {"stock": "STRL", "weight": 8}, {"stock": "DELL", "weight": 7}, {"stock": "FDX", "weight": 5}, {"stock": "AAPL", "weight": 3}, {"stock": "VIAV", "weight": 2}],
         'Claude AI':[{"stock": "NVDA", "weight": 25}, {"stock": "MSFT", "weight": 20}, {"stock": "AVGO", "weight": 15}, {"stock": "FDX", "weight": 15}, {"stock": "SPY", "weight": 25}]
         }
+    },
+  # Week 22: Jun 29 - Jul 3, 2026 -----------------------------------------------
+{
+    'week_num': 22,
+    'start_date': datetime(2026, 6, 29),
+    'end_date': datetime(2026, 7, 3),
+    'portfolios': {
+        'ChatGPT':  [{"stock": "NVDA", "weight": 25}, {"stock": "MSFT", "weight": 15}, {"stock": "AAPL", "weight": 10}, {"stock": "AMZN", "weight": 10}, {"stock": "META", "weight": 10}, {"stock": "TSLA", "weight": 10}, {"stock": "AMD", "weight": 10}, {"stock": "GOOGL", "weight": 10}],
+        'Grok':     [{"stock": "NVDA", "weight": 35}, {"stock": "AMD", "weight": 25}, {"stock": "MU", "weight": 20}, {"stock": "SMCI", "weight": 10}, {"stock": "MRVL", "weight": 10}],
+        'DeepSeek': [{"stock": "ALAB", "weight": 15}, {"stock": "AMAT", "weight": 12}, {"stock": "KLAC", "weight": 10}, {"stock": "TSLA", "weight": 10}, {"stock": "AMZN", "weight": 8}, {"stock": "GOOGL", "weight": 8}, {"stock": "META", "weight": 7}, {"stock": "CMCSA", "weight": 7}, {"stock": "WDC", "weight": 7}, {"stock": "SNDK", "weight": 6}, {"stock": "BE", "weight": 5}, {"stock": "MRNA", "weight": 5}],
+        'Claude AI':[{"stock": "NVDA", "weight": 20}, {"stock": "AVGO", "weight": 15}, {"stock": "CRWD", "weight": 12}, {"stock": "GOOGL", "weight": 12}, {"stock": "ABNB", "weight": 10}, {"stock": "JCI", "weight": 8}, {"stock": "NKE", "weight": 8}, {"stock": "AMZN", "weight": 8}, {"stock": "LYB", "weight": 4}, {"stock": "DAKT", "weight": 3}]
+        }
     }
 ]
 print(f' {len(WEEKS_DATA)} weeks defined')
